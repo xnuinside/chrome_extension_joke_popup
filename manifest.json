@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "Joke PopUp",
+    "version": "0.1",
+    "description": "Plugin that rise annoying pop up with message and replace all img on the page with kittens from http://placekitten.com/. Make fun!", 
+    "author": {
+      "name": "Iuliia Volkova",
+      "email": "xnuinside@gmail.com"
+     },
+     "homepage_url": "https://github.com/xnuinside",
+    "icons": { 
+        "16": "images/clown.png",
+        "48": "images/clown.png",
+        "128": "images/clown.png" 
+    },
+    "browser_action": {
+      "default_icon": "images/clown.png",
+      "default_popup": "html/popup.html",
+      "default_title": "Joke PopUp plugin!"
+    },
+    
+        "content_scripts": [
+          {
+            "matches": ["<all_urls>"],
+            "js": ["scripts/jquery-3.5.1.min.js", "scripts/content.js"]
+        ,
+        "permissions": [
+           "activeTab"
+        ]
+      
+  }
+]}

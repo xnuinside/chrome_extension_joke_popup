@@ -1,0 +1,1 @@
+Primitive Google Chrome Extension (Plugin) that alert message and replace all images by kittens from  http://placekitten.com/.
